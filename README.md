@@ -23,7 +23,8 @@ The application features a tabbed interface for managing different weeks and a c
 The application provides full control over task entries via dedicated dialogs, ensuring clean separation from the main viewing table.
 
 * **Add Tasks:** Clicking **"Add Task"** opens a dedicated dialog where the user enters the day, start/end times, and task details.
-    * **Screenshot Example:** ![Add Task Dialog](./Assets/Picture2.jpg)
+    * **Screenshot Example:** 
+            ![Add Task Dialog](./Assets/Picture2.jpg)
     * *Result:* The new task is appended to the corresponding day's cell.
     * **Data Integrity & Validation:** Prevents blank tasks and enforces that the **end time is strictly after the start time**.
 
@@ -32,7 +33,8 @@ The application provides full control over task entries via dedicated dialogs, e
     * By selecting a day (row) and clicking **"Edit"**, a prompt appears.
     * If a day has multiple tasks, a dropdown menu allows the user to select the specific task to modify.
     * Users can then change the time, activity, or **shift the task to a different day**.
-        * **Screenshot Example:** ![Edit Task Selection Dropdown](./Assets/Picture6.jpg)
+        * **Screenshot Example:** 
+                ![Edit Task Selection Dropdown](./Assets/Picture6.jpg)
         * *Result:* Users can change the time, activity, or even shift the task to a different day.
     
     * **Delete Week:** A **"Delete This Week"** button provides safe removal of any week except Week 1.
@@ -41,7 +43,8 @@ The application provides full control over task entries via dedicated dialogs, e
 * **Repeat Previous Week:** The **"Repeat Previous Week"** checkbox handles copying data from any prior week to the current one.
 * **Source Selection:** If the current week is **Week 3 or later**, a dropdown menu appears, allowing the user to select *which* previous week (e.g., Week 1, Week 2) should be copied.
 * **Data Appending:** Copied tasks are **appended** to the current week's schedule without deleting existing entries.
-    * **Screenshot Example:** ![Choose Week to Repeat Dialog](./Assets/Picture11.jpg)
+    * **Screenshot Example:** 
+            ![Choose Week to Repeat Dialog](./Assets/Picture11.jpg)
     * *Result:* All tasks from the chosen week are copied into the current week, preserving existing tasks.
     
 ---
@@ -58,11 +61,20 @@ The application provides full control over task entries via dedicated dialogs, e
 
 ---
 
-## 🚀 How to Run
+ ## 🚀 How to Run
 
-1. **Prerequisites:** You must have a Java Development Kit (JDK) installed on your system.
-2. **Clone the Repository:** Download or clone the project files.
-3. **Compile:** Open a terminal or command prompt in the directory *containing* the `SwingGUIWork` folder and run:
+1.  **Prerequisites:** You must have a Java Development Kit (JDK) installed on your system.
+2.  **Clone the Repository:** Download or clone the project files.
+3.  **Compile:** Open a terminal or command prompt in the directory *containing* the `SwingGUIWork` folder and run:
 
-```bash
-javac SwingGUIWork/*.java
+    ```bash
+    javac SwingGUIWork/*.java
+    ```
+
+4.  **Run:** Execute the main application file:
+
+    ```bash
+    java SwingGUIWork.DailyRoutineGUI
+    ```
+
+--- 
